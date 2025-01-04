@@ -1,12 +1,13 @@
 # Project: Phishing Mail Alert - Investigation of Malicious File Attachment
 
 ## Platform:
-- **Let'sDefend**  
+- **LetsDefend**  
 - **Event ID**: 45
 
 ## Tools:
 - **VirusTotal**: Used to analyze URLs, files, and hashes.
 - **URLHaus**: Utilized to check URL reputation.
+- **AnyRun**: For deeper file analysis (if applicable).
 - **EDR (Endpoint Detection and Response)**: Used to isolate the affected system.
 
 ## Role:
@@ -53,43 +54,49 @@
 
 ## Incident Response Steps:
 
-1. **Containment/Isolation**:  
+1. **Alert Detection**:  
+   The first step of the investigation was identifying the alert within the Let'sDefend platform. Below is a picture showing the detected phishing alert.
+
+   ![Alert Detection](images/alert_detection.png)  
+   *Caption: Detection of the phishing email alert within the Let'sDefend platform.*
+
+2. **Containment/Isolation**:  
    The first step in addressing the threat was isolating the affected system to prevent further compromise. This was done using **EDR (Endpoint Detection and Response)**, which allowed for the quick containment of the infected device from the network.
 
    ![Containment Step](images/containment_step.png)  
    *Caption: Isolating the affected system using EDR.*
 
-2. **Investigation and Analysis**:  
+3. **Investigation and Analysis**:  
    I began by extracting key information from the phishing email, such as the SMTP address, source, and destination details. I then used VirusTotal and URLHaus to analyze the attachments, URLs, and hashes.
 
    ![Investigation Analysis](images/investigation_analysis.png)  
    *Caption: Performing investigation and analysis on the phishing email.*
 
-3. **Review Indicators of Compromise (IOCs)**:  
+4. **Review Indicators of Compromise (IOCs)**:  
    - Checked the reputation of the sender’s email address and the malicious URL through VirusTotal.
    - Cross-referenced hashes and identified known malicious activity.
 
    ![IOC Review](images/ioc_review.png)  
    *Caption: Reviewing indicators of compromise (IOCs).*
 
-4. **Examine Network Activity**:  
+5. **Examine Network Activity**:  
    I reviewed endpoint security logs, browser history, and network connections. The destination IP `5.135.143.133` was identified, confirming the activity was associated with a malicious payload.
 
    ![Network Activity](images/network_activity_step.png)  
    *Caption: Investigating network activity related to the malicious IP.*
 
-5. **File and Payload Analysis**:  
+6. **File and Payload Analysis**:  
    - The Excel file attachment was identified using its MD5 hash and verified against VirusTotal results.
    - SHA-256 hash matching led to identifying the malicious nature of the file.
 
    ![File and Payload](images/file_payload_analysis.png)  
    *Caption: File and payload analysis on VirusTotal.*
 
-6. **Mitigation/Response**:  
-   - After identifying the malicious activity, the infected system was isolated using EDR to prevent the spread of the malware. Further steps were taken to secure the environment by patching the CVE and blocking the malicious IP.
+7. **Mitigation/Response**:  
+   - After identifying the malicious activity, the infected system was **isolated** using EDR to prevent the spread of the malware. Further steps were taken to secure the environment by patching the CVE and preparing for continued monitoring.
 
    ![Mitigation Response](images/mitigation_response.png)  
-   *Caption: Mitigation actions, including blocking malicious IPs and patching the CVE.*
+   *Caption: Mitigation actions, including isolating the infected system and preparing for further investigation.*
 
 ---
 
@@ -116,7 +123,8 @@ Check out the **YouTube demonstration** for a walkthrough of the investigation p
    The phishing email contained a malicious Excel file that exploited a known vulnerability (CVE-2017-11882). The investigation successfully identified indicators of compromise (IOCs) like malicious URLs, payload hashes, and suspicious network activity.
   
 - **Remediation**:  
-   The affected device was isolated using **EDR (Endpoint Detection and Response)** to prevent the spread of the malware. Necessary patches were applied to fix the identified exploit. The malicious IP was blocked, and additional monitoring was put in place to prevent future attacks of this nature.
+   The affected device was **isolated** using **EDR (Endpoint Detection and Response)** to prevent the spread of the malware.Additional monitoring and investigation steps were planned to prevent future attacks of this nature.
+
 
 
 
