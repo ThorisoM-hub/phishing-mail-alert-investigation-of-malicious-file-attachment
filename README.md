@@ -1,4 +1,4 @@
-# Project: Phishing Mail Alert - Investigation of Malicious File Attachment
+#  Phishing Mail Alert - Investigation of Malicious File Attachment
 
 ## Platform:
 - **LetsDefend**  
