@@ -26,21 +26,41 @@
 - **Malicious URL**: [http://andeluctabeach.net/Anage/network-exe](http://andeluctabeach.net/Anage/network-exe)
   - **Action Taken**: After uploading the malicious attachment to VirusTotal, I navigated to the URL relations and discovered this website associated with the threat.
 
-  ![Malicious URL Analysis](images/url_analysis.png)  
+   ### Malicious URL Analysis
+<p align="center">
+  <img src="https://imgur.com/wWEEuHr.png" alt="malicious URL Analysis" width="100%" />
+</p>
   *Caption: Analysis of the malicious URL in VirusTotal.*
 
 ### Payload and Hash Analysis:
 - **SHA-256 Hash**: `101bf67953ee39065a917a37670cc43836cf5c0a938082f4038515efebddcc04`
   - **Findings**: The hash matched a known malicious payload, and it was flagged as malicious on VirusTotal.
 
-  ![Payload Hash Analysis](images/payload_hash_analysis.png)  
+<p align="center">
+  <img src="https://imgur.com/1cejDo6.png" alt="Payload and Hash analysis" width="100%" />
+</p>
+   
   *Caption: SHA-256 hash analysis on VirusTotal showing malicious status.*
+  
+### Additional Evidence from URLhaus:
 
+The malicious hash was also found on URLhaus, a platform that tracks malicious URLs and payloads. Below is an image of the URLhaus entry confirming the malicious nature of the payload:
+
+The hash was initially identified using the website [http://andeluctabeach.net/Anage/network-exe](http://andeluctabeach.net/Anage/network-exe). This platform facilitated the discovery and extraction of the malicious hash from a suspicious payload.
+
+<p align="center">
+  <img src="https://imgur.com/ySIgLGm.png" alt="URLhaus Hash Analysis" width="100%" />
+</p>
+
+*Caption: SHA-256 hash entry on URLhaus indicating malicious activity.*
 ### Exploit Detection:
 - **Exploit**: CVE-2017-11882
   - **Action Taken**: After identifying the CVE in VirusTotal, I visited the official website to gather more information on the exploit.
 
-  ![Exploit CVE-2017-11882](images/exploit_cve_research.png)  
+ ### Exploit CVE-2017-1188
+<p align="center">
+  <img src="https://imgur.com/F3OVZQZ.png" alt="Exploit CVE-2017-1188" width="100%" />
+</p>
   *Caption: Researching the CVE-2017-11882 exploit on the official website.*
 
 ### IP Address and Network Activity:
