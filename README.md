@@ -32,6 +32,16 @@
 </p>
   *Caption: Analysis of the malicious URL in VirusTotal.*
 
+###  Evidence from URLhaus:
+
+The malicious hash was also found on URLhaus, a platform that tracks malicious URLs and payloads. Below is an image of the URLhaus entry confirming the malicious nature of the payload:
+
+The hash was initially identified using the website [http://andeluctabeach.net/Anage/network-exe](http://andeluctabeach.net/Anage/network-exe). This platform facilitated the discovery and extraction of the malicious hash from a suspicious payload.
+
+<p align="center">
+  <img src="https://imgur.com/ySIgLGm.png" alt="URLhaus Hash Analysis" width="100%" />
+</p>
+
 ### Payload and Hash Analysis:
 - **SHA-256 Hash**: `101bf67953ee39065a917a37670cc43836cf5c0a938082f4038515efebddcc04`
   - **Findings**: The hash matched a known malicious payload, and it was flagged as malicious on VirusTotal.
@@ -41,16 +51,6 @@
 </p>
    
   *Caption: SHA-256 hash analysis on VirusTotal showing malicious status.*
-  
-### Additional Evidence from URLhaus:
-
-The malicious hash was also found on URLhaus, a platform that tracks malicious URLs and payloads. Below is an image of the URLhaus entry confirming the malicious nature of the payload:
-
-The hash was initially identified using the website [http://andeluctabeach.net/Anage/network-exe](http://andeluctabeach.net/Anage/network-exe). This platform facilitated the discovery and extraction of the malicious hash from a suspicious payload.
-
-<p align="center">
-  <img src="https://imgur.com/ySIgLGm.png" alt="URLhaus Hash Analysis" width="100%" />
-</p>
 
 *Caption: SHA-256 hash entry on URLhaus indicating malicious activity.*
 ### Exploit Detection:
@@ -67,8 +67,19 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 - **IP Destination**: `5.135.143.133`
   - **Action Taken**: I traced the network connections via endpoint security, examining browser history and process lists to identify the destination IP. Further log management and network logs confirmed this IP address as a destination.
 
-  ![Network Activity](images/network_activity.png)  
-  *Caption: Investigating network activity related to the malicious IP.*
+<p align="center">
+  <img src="https://imgur.com/rnJp1a1.png" alt="Network Activity" width="75%" />
+  <img src="https://imgur.com/ZkTx8JW.png" alt="Network Activity" width="75%" />
+</p>
+
+### log management
+<p align="center">
+  <img src="https://imgur.com/TYXNZ2e.png" alt="Log Management" width="75%" />
+  <img src="https://imgur.com/GH5Fz2R.png" alt="Log Management" width="75%" />
+</p>
+
+  
+  *Caption: Investigating network activity and log management related to the malicious IP.*
 
 ---
 
@@ -77,13 +88,22 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 1. **Alert Detection**:  
    The first step of the investigation was identifying the alert within the Let'sDefend platform. Below is a picture showing the detected phishing alert.
 
-   ![Alert Detection](images/alert_detection.png)  
+   
+    ### Alert Detection
+<p align="center">
+  <img src="https://imgur.com/Wp2gqDi.png" alt="Alert Detection" width="100%" />
+</p>
+
    *Caption: Detection of the phishing email alert within the Let'sDefend platform.*
 
-2. **Containment/Isolation**:  
-   The first step in addressing the threat was isolating the affected system to prevent further compromise. This was done using **EDR (Endpoint Detection and Response)**, which allowed for the quick containment of the infected device from the network.
+2 **Containment/Isolation**:  
 
-   ![Containment Step](images/containment_step.png)  
+   The first step in addressing the threat was isolating the affected system to prevent further compromise. This was done using **EDR (Endpoint Detection and Response)**, which allowed for the quick containment of the infected device from the network.
+    
+    ### Containment Step
+  <p align="center">
+  <img src="https://imgur.com/eP3q7lX.png" alt="Containment Step" width="100%" />
+</p>
    *Caption: Isolating the affected system using EDR.*
 
 3. **Investigation and Analysis**:  
