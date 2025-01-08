@@ -1,4 +1,4 @@
-#  Phishing Mail Alert - Investigation of Malicious File Attachment
+# Phishing Mail Alert - Investigation of Malicious File Attachment
 
 ## Platform:
 - **LetsDefend**  
@@ -32,7 +32,7 @@
 </p>
   *Caption: Analysis of the malicious URL in VirusTotal.*
 
-###  Evidence from URLhaus:
+### Evidence from URLhaus:
 
 The malicious hash was also found on URLhaus, a platform that tracks malicious URLs and payloads. Below is an image of the URLhaus entry confirming the malicious nature of the payload:
 
@@ -53,6 +53,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
   *Caption: SHA-256 hash analysis on VirusTotal showing malicious status.*
 
 *Caption: SHA-256 hash entry on URLhaus indicating malicious activity.*
+
 ### Exploit Detection:
 - **Exploit**: CVE-2017-11882
   - **Action Taken**: After identifying the CVE in VirusTotal, I visited the official website to gather more information on the exploit.
@@ -71,15 +72,16 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
   <img src="https://imgur.com/rnJp1a1.png" alt="Network Activity" width="75%" />
   <img src="https://imgur.com/ZkTx8JW.png" alt="Network Activity" width="75%" />
 </p>
----
-### Log management
+
+## Log Management
+
 <p align="center">
   <img src="https://imgur.com/TYXNZ2e.png" alt="Log Management" width="100%" />
+</p>
+<p align="center">
   <img src="https://imgur.com/bP2ecrP.png" alt="Log Management" width="100%" />
 </p>
-
-  
-  *Caption: Investigating network activity and log management related to the malicious IP.*
+*Caption: Investigating network activity and log management related to the malicious IP.*
 
 ---
 
@@ -157,9 +159,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 </p>
 
 ---
-   *Caption: Mitigation actions, including isolating the infected system and preparing for further investigation.*
 
----
 ## Playbook Results:
 
 - After executing the playbook to mitigate the phishing threat, I followed predefined steps for analyzing the email, identifying the malicious file, and isolating the affected system. Below is the result summary of the playbook execution.
@@ -187,13 +187,3 @@ Check out the **YouTube demonstration** for a walkthrough of the investigation p
   
 - **Remediation**:  
    The affected device was **isolated** using **EDR (Endpoint Detection and Response)** to prevent the spread of the malware.Additional monitoring and investigation steps were planned to prevent future attacks of this nature.
-
-
-
-
-
-
-
-
-
-  
