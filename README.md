@@ -71,11 +71,11 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
   <img src="https://imgur.com/rnJp1a1.png" alt="Network Activity" width="75%" />
   <img src="https://imgur.com/ZkTx8JW.png" alt="Network Activity" width="75%" />
 </p>
-
-### log management
+---
+### Log management
 <p align="center">
-  <img src="https://imgur.com/TYXNZ2e.png" alt="Log Management" width="75%" />
-  <img src="https://imgur.com/GH5Fz2R.png" alt="Log Management" width="75%" />
+  <img src="https://imgur.com/TYXNZ2e.png" alt="Log Management" width="100%" />
+  <img src="https://imgur.com/bP2ecrP.png" alt="Log Management" width="100%" />
 </p>
 
   
@@ -91,7 +91,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
    
     ### Alert Detection
 <p align="center">
-  <img src="https://imgur.com/Wp2gqDi.png" alt="Alert Detection" width="100%" />
+  <img src="https://imgur.com/Gwbg1Pz.png" alt="Alert Detection" width="100%" />
 </p>
 
    *Caption: Detection of the phishing email alert within the Let'sDefend platform.*
@@ -108,31 +108,37 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
 3. **Investigation and Analysis**:  
    I began by extracting key information from the phishing email, such as the SMTP address, source, and destination details. I then used VirusTotal and URLHaus to analyze the attachments, URLs, and hashes.
-
-   ![Investigation Analysis](images/investigation_analysis.png)  
+   
+    ### Investigation Analysis
+<p align="center">
+  <img src="https://imgur.com/4tIEB7k.png" alt="Alert Detection" width="100%" />
+</p>
    *Caption: Performing investigation and analysis on the phishing email.*
 
-4. **Review Indicators of Compromise (IOCs)**:  
+5. **Review Indicators of Compromise (IOCs)**:  
    - Checked the reputation of the sender’s email address and the malicious URL through VirusTotal.
    - Cross-referenced hashes and identified known malicious activity.
 
-   ![IOC Review](images/ioc_review.png)  
+ ### IOC Review
+<p align="center">
+  <img src=".png" alt="Alert Detection" width="100%" />
+</p>
    *Caption: Reviewing indicators of compromise (IOCs).*
 
-5. **Examine Network Activity**:  
+7. **Examine Network Activity**:  
    I reviewed endpoint security logs, browser history, and network connections. The destination IP `5.135.143.133` was identified, confirming the activity was associated with a malicious payload.
 
    ![Network Activity](images/network_activity_step.png)  
    *Caption: Investigating network activity related to the malicious IP.*
 
-6. **File and Payload Analysis**:  
+8. **File and Payload Analysis**:  
    - The Excel file attachment was identified using its MD5 hash and verified against VirusTotal results.
    - SHA-256 hash matching led to identifying the malicious nature of the file.
 
    ![File and Payload](images/file_payload_analysis.png)  
    *Caption: File and payload analysis on VirusTotal.*
 
-7. **Mitigation/Response**:  
+9. **Mitigation/Response**:  
    - After identifying the malicious activity, the infected system was **isolated** using EDR to prevent the spread of the malware. Further steps were taken to secure the environment by patching the CVE and preparing for continued monitoring.
 
    ![Mitigation Response](images/mitigation_response.png)  
