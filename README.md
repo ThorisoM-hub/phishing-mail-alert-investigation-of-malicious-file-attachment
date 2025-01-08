@@ -121,31 +121,47 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
  ### IOC Review
 <p align="center">
-  <img src=".png" alt="Alert Detection" width="100%" />
+  <img src="https://imgur.com/QYnAIEM.png" alt="IOC Review" width="100%" />
 </p>
    *Caption: Reviewing indicators of compromise (IOCs).*
 
 7. **Examine Network Activity**:  
    I reviewed endpoint security logs, browser history, and network connections. The destination IP `5.135.143.133` was identified, confirming the activity was associated with a malicious payload.
 
-   ![Network Activity](images/network_activity_step.png)  
+    ### Network Activity
+<p align="center">
+  <img src="https://imgur.com/CfMNRyT.png" alt="Network Activity" width="100%" />
+</p>
    *Caption: Investigating network activity related to the malicious IP.*
 
 8. **File and Payload Analysis**:  
    - The Excel file attachment was identified using its MD5 hash and verified against VirusTotal results.
    - SHA-256 hash matching led to identifying the malicious nature of the file.
 
-   ![File and Payload](images/file_payload_analysis.png)  
+   <p align="center">
+  <img src="https://imgur.com/CfMNRyT.png" alt="Network Activity" width="100%" />
+  <img src="https://imgur.com/EWC3JOS.png" alt="Mitigation and Incident Response" width="100%" />
+</p>
    *Caption: File and payload analysis on VirusTotal.*
 
-9. **Mitigation/Response**:  
-   - After identifying the malicious activity, the infected system was **isolated** using EDR to prevent the spread of the malware. Further steps were taken to secure the environment by patching the CVE and preparing for continued monitoring.
+9.**Mitigation/Response**: 
 
-   ![Mitigation Response](images/mitigation_response.png)  
+## Mitigation and Response
+
+- Upon detecting malicious activity, the **infected system** was **isolated** using Endpoint Detection and Response (EDR) tools to prevent the spread of malware.  
+- The vulnerability associated with the CVE was patched to secure the environment.  
+- Continued monitoring and additional defensive measures were implemented to mitigate further risks.  
+- The alert was reviewed and **closed as a true positive**, confirming the validity of the detection.
+  
+<p align="center">
+  <img src="https://imgur.com/gnRjE0N.png" alt="Mitigation and Incident Response" width="100%" />
+  <img src="https://imgur.com/2rzJzLe.png" alt="Mitigation and Incident Response" width="100%" />
+</p>
+
+---
    *Caption: Mitigation actions, including isolating the infected system and preparing for further investigation.*
 
 ---
-
 ## Playbook Results:
 
 - After executing the playbook to mitigate the phishing threat, I followed predefined steps for analyzing the email, identifying the malicious file, and isolating the affected system. Below is the result summary of the playbook execution.
@@ -159,7 +175,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
 Check out the **YouTube demonstration** for a walkthrough of the investigation process:
 
-[Phishing Mail Alert Investigation - YouTube](https://www.youtube.com/watch?v=your_video_id)
+[Phishing Mail Alert Investigation - YouTube](https://www.youtube.com/watch?v=erbS2OB38ww)
 
 ---
 
