@@ -144,9 +144,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 </p>
    *Caption: File and payload analysis on VirusTotal.*
 
-9.**Mitigation/Response**: 
-
-## Mitigation and Response
+9. **Mitigation/Response**: 
 
 - Upon detecting malicious activity, the **infected system** was **isolated** using Endpoint Detection and Response (EDR) tools to prevent the spread of malware.  
 - The vulnerability associated with the CVE was patched to secure the environment.  
@@ -166,7 +164,10 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
 - After executing the playbook to mitigate the phishing threat, I followed predefined steps for analyzing the email, identifying the malicious file, and isolating the affected system. Below is the result summary of the playbook execution.
 
-  ![Playbook Results](images/playbook_results.png)  
+  <p align="center">
+  <img src="https://imgur.com/Sislo4X.png" alt="Playbook Results" width="100%" />
+</p>
+
   *Caption: Results from executing the playbook, showing key investigation and response steps.*
 
 ---
