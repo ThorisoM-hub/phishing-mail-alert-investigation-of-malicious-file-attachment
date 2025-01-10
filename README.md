@@ -28,7 +28,7 @@
 
    ### Malicious URL Analysis
 <p align="center">
-  <img src="https://imgur.com/wWEEuHr.png" alt="malicious URL Analysis" width="100%" />
+  <img src="https://i.imgur.com/29232MS.png" alt="malicious URL Analysis" width="100%" />
 </p>
   *Caption: Analysis of the malicious URL in VirusTotal.*
 
@@ -39,7 +39,7 @@ The malicious hash was also found on URLhaus, a platform that tracks malicious U
 The hash was initially identified using the website [http://andeluctabeach.net/Anage/network-exe](http://andeluctabeach.net/Anage/network-exe). This platform facilitated the discovery and extraction of the malicious hash from a suspicious payload.
 
 <p align="center">
-  <img src="https://imgur.com/ySIgLGm.png" alt="URLhaus Hash Analysis" width="100%" />
+  <img src="https://i.imgur.com/i4sDjH1.png" alt="URLhaus Hash Analysis" width="100%" />
 </p>
 
 ### Payload and Hash Analysis:
@@ -60,7 +60,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
  ### Exploit CVE-2017-1188
 <p align="center">
-  <img src="https://imgur.com/F3OVZQZ.png" alt="Exploit CVE-2017-1188" width="100%" />
+  <img src="https://i.imgur.com/EO34mQu.png" alt="Exploit CVE-2017-1188" width="100%" />
 </p>
   *Caption: Researching the CVE-2017-11882 exploit on the official website.*
 
@@ -69,17 +69,17 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
   - **Action Taken**: I traced the network connections via endpoint security, examining browser history and process lists to identify the destination IP. Further log management and network logs confirmed this IP address as a destination.
 
 <p align="center">
-  <img src="https://imgur.com/rnJp1a1.png" alt="Network Activity" width="75%" />
-  <img src="https://imgur.com/ZkTx8JW.png" alt="Network Activity" width="75%" />
+  <img src="https://i.imgur.com/pldeY15.png" alt="Network Activity" width="75%" />
+  <img src="https://i.imgur.com/swPurTo.png" alt="Network Activity" width="75%" />
 </p>
 
 ## Log Management
 
 <p align="center">
-  <img src="https://imgur.com/TYXNZ2e.png" alt="Log Management" width="100%" />
+  <img src="https://i.imgur.com/6STtsZf.png" alt="Log Management" width="100%" />
 </p>
 <p align="center">
-  <img src="https://imgur.com/bP2ecrP.png" alt="Log Management" width="100%" />
+  <img src="https://i.imgur.com/cGEKmNm.png" alt="Log Management" width="100%" />
 </p>
 *Caption: Investigating network activity and log management related to the malicious IP.*
 
