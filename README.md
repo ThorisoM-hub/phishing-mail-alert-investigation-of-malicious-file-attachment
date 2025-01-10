@@ -141,7 +141,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
    - SHA-256 hash matching led to identifying the malicious nature of the file.
 
    <p align="center">
-  <img src="https://imgur.com/CfMNRyT.png" alt="Network Activity" width="100%" />
+  <img src="https://i.imgur.com/vAIJdGw.png" alt="Network Activity" width="100%" />
   <img src="https://imgur.com/EWC3JOS.png" alt="Mitigation and Incident Response" width="100%" />
 </p>
    *Caption: File and payload analysis on VirusTotal.*
