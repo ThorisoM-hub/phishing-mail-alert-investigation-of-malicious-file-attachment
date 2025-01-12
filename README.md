@@ -47,7 +47,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
   - **Findings**: The hash matched a known malicious payload, and it was flagged as malicious on VirusTotal.
 
 <p align="center">
-  <img src="https://imgur.com/1cejDo6.png" alt="Payload and Hash analysis" width="100%" />
+  <img src="https://i.imgur.com/PhHGFMc.png.png" alt="Payload and Hash analysis" width="100%" />
 </p>
    
   *Caption: SHA-256 hash analysis on VirusTotal showing malicious status.*
