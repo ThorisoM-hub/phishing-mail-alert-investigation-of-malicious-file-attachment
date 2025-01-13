@@ -6,8 +6,7 @@
 
 ## Tools:
 - **VirusTotal**: Used to analyze URLs, files, and hashes.
-- **URLHaus**: Utilized to check URL reputation.
-- **AnyRun**: For deeper file analysis (if applicable).
+- **URLHaus**: Utilized to check URL reputation
 - **EDR (Endpoint Detection and Response)**: Used to isolate the affected system.
 
 ## Role:
