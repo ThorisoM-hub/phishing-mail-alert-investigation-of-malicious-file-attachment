@@ -153,8 +153,8 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 - The alert was reviewed and **closed as a true positive**, confirming the validity of the detection.
   
 <p align="center">
-  <img src="https://imgur.com/gnRjE0N.png" alt="Mitigation and Incident Response" width="100%" />
-  <img src="https://imgur.com/2rzJzLe.png" alt="Mitigation and Incident Response" width="100%" />
+  <img src="https://i.imgur.com/YO7YHf9.png" alt="Mitigation and Incident Response" width="100%" />
+  <img src="https://i.imgur.com/fsTSAZE.png" alt="Mitigation and Incident Response" width="100%" />
 </p>
 
 ---
