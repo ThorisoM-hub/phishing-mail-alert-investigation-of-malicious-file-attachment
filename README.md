@@ -122,7 +122,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
  ### IOC Review
 <p align="center">
-  <img src="https://imgur.com/QYnAIEM.png" alt="IOC Review" width="100%" />
+  <img src="https://i.imgur.com/t9fNgVi.png" alt="IOC Review" width="100%" />
 </p>
    *Caption: Reviewing indicators of compromise (IOCs).*
 
@@ -141,7 +141,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
    <p align="center">
   <img src="https://i.imgur.com/vAIJdGw.png" alt="Network Activity" width="100%" />
-  <img src="https://imgur.com/EWC3JOS.png" alt="Mitigation and Incident Response" width="100%" />
+  <img src="https://i.imgur.com/5MXjK0l.png"alt="Mitigation and Incident Response" width="100%" />
 </p>
    *Caption: File and payload analysis on VirusTotal.*
 
