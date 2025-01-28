@@ -126,7 +126,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 </p>
    *Caption: Reviewing indicators of compromise (IOCs).*
 
-7. **Examine Network Activity**:  
+6. **Examine Network Activity**:  
    I reviewed endpoint security logs, browser history, and network connections. The destination IP `5.135.143.133` was identified, confirming the activity was associated with a malicious payload.
 
     ### Network Activity
@@ -135,7 +135,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 </p>
    *Caption: Investigating network activity related to the malicious IP.*
 
-8. **File and Payload Analysis**:  
+7. **File and Payload Analysis**:  
    - The Excel file attachment was identified using its MD5 hash and verified against VirusTotal results.
    - SHA-256 hash matching led to identifying the malicious nature of the file.
 
@@ -145,7 +145,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 </p>
    *Caption: File and payload analysis on VirusTotal.*
 
-9. **Mitigation/Response**: 
+8. **Mitigation/Response**: 
 
 - Upon detecting malicious activity, the **infected system** was **isolated** using Endpoint Detection and Response (EDR) tools to prevent the spread of malware.  
 - The vulnerability associated with the CVE was patched to secure the environment.  
