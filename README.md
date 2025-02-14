@@ -92,7 +92,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
    
     ### Alert Detection
 <p align="center">
-  <img src="https://imgur.com/Gwbg1Pz.png" alt="Alert Detection" width="100%" />
+  <img src="https://i.imgur.com/fRqY5LK.png" alt="Alert Detection" width="100%" />
 </p>
 
    *Caption: Detection of the phishing email alert within the Let'sDefend platform.*
