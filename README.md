@@ -1,7 +1,7 @@
 # Phishing Mail Alert Investigation and incident response 
 
 <p align="center">
-  <img src="https://i.imgur.com/tB3sIT9.png" alt=" Phishing mail(malicious attachment)" width="80%" />
+  <img src="https://i.imgur.com/tB3sIT9.png" alt=" Phishing mail(malicious attachment)" width=100%" />
 </p>
 
 ## Platform:
