@@ -114,9 +114,9 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 3. **Investigation and Analysis**:  
    I began by extracting key information from the phishing email, such as the SMTP address, source, and destination details. I then used VirusTotal and URLHaus to analyze the attachments, URLs, and hashes.
    
-    ### Investigation Analysis
+    ### Investigation and analysis
 <p align="center">
-  <img src="https://imgur.com/4tIEB7k.png" alt="Alert Detection" width="100%" />
+  <img src="https://i.imgur.com/SjqXfpW.png" alt="Alert Detection" width="100%" />
 </p>
    *Caption: Performing investigation and analysis on the phishing email.*
 
@@ -126,7 +126,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
  ### IOC Review
 <p align="center">
-  <img src="https://i.imgur.com/t9fNgVi.png" alt="IOC Review" width="100%" />
+  <img src="https://i.imgur.com/RM20CH3.png" alt="IOC Review" width="100%" />
 </p>
    *Caption: Reviewing indicators of compromise (IOCs).*
 
@@ -135,7 +135,7 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
 
     ### Network Activity
 <p align="center">
-  <img src="https://imgur.com/CfMNRyT.png" alt="Network Activity" width="100%" />
+  <img src="https://i.imgur.com/bK3KVHp.png" alt="Network Activity" width="100%" />
 </p>
    *Caption: Investigating network activity related to the malicious IP.*
 
@@ -143,11 +143,12 @@ The hash was initially identified using the website [http://andeluctabeach.net/A
    - The Excel file attachment was identified using its MD5 hash and verified against VirusTotal results.
    - SHA-256 hash matching led to identifying the malicious nature of the file.
 
-   <p align="center">
-  <img src="https://i.imgur.com/vAIJdGw.png" alt="Network Activity" width="100%" />
-  <img src="https://i.imgur.com/5MXjK0l.png"alt="Mitigation and Incident Response" width="100%" />
+  <p align="center">
+  <img src="https://i.imgur.com/vAIJdGw.png" alt="file and payload" width="100%" />
+     <br>
+  <img src="https://i.imgur.com/bYdoPd7.png" alt="file and payload" width="100%" />
 </p>
-   *Caption: File and payload analysis on VirusTotal.*
+<p align="center"><em>Caption: File and payload analysis on VirusTotal.</em></p>
 
 8. **Mitigation/Response**: 
 
